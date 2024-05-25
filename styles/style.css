@@ -1,0 +1,271 @@
+body{
+    font-family: 'Reddit Sans';
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: #fffe;
+    padding: 5px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 8px;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: #2b2c34;
+    /* font-family: 'Reddit Sans'; */
+    font-weight: 500;
+}
+nav a:hover{
+    color: #fffe;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0.5rem 1.5rem;
+}
+nav li:hover{
+    background-color: #6246ea;
+    border-radius: 10px;
+}
+
+/* ABOUT */
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-about img{
+    width: 80%;
+    border-radius: 25px;
+}
+
+.right-about{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-about{
+    /* font-family: 'Reddit Sans'; */
+    background-color: #d1d1e9;
+    border-radius: 10px;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 20px
+}
+.left-about h1{
+    font-size: 45px;
+}
+.left-about p{
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+/* SKILL */
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 3rem 1rem;
+}
+
+.skill-list{
+    background-color: #d1d1e9;
+    border-radius: 10px;
+}
+.skill-list ul{
+    list-style: none;
+    padding: 2rem 4rem;
+}
+.skill-list li{
+    margin: 20px 0;
+    font-size: 20px;
+    /* font-family: 'Reddit Sans'; */
+    font-weight: 600;
+}
+.skill-list li i{
+    font-size: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+.skill h2{
+    /* font-family: 'Reddit Sans'; */
+    font-size: 45px;
+}
+
+/* PORTOFOLIO */
+.portofolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 3rem 1rem;
+}
+.portofolio h2{
+    font-size: 45px;
+}
+.portofolio p{
+    font-size: 20px;
+}
+
+.portofolio-item img{
+    width: 300px;
+}
+
+.portofolio-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* CONTACT */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 3rem 1rem;
+}
+.contact h2{
+    font-size: 45px;
+}
+
+.contact-list{
+    background-color: #d1d1e9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-list li{
+    margin: 20px;
+}
+.contact-list ul{
+    list-style: none;
+    padding: 2rem 4rem;
+    width: 18rem;
+}
+.contact-list a{
+    display: block;
+    text-decoration: none;
+    color: #2b2c34;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem;
+    border: 1px solid #2b2c34;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact-list li:hover{
+    background-color: #6246ea;
+    border-radius: 10px;
+}
+.contact-list a:hover{
+    color: #fffe;
+}
+
+/* ASIDE */
+aside{
+    /* background-color: #d1d1e9; */
+    /* border-radius: 10px;
+    height: 73vh; */
+    flex: 1;
+    padding: 1rem;
+    margin-top: 10px;
+}
+.profile header{
+    text-align: center;
+}
+
+.profile img{
+    width: 150px;
+    border-radius: 80px;
+}
+
+main{
+    display: flex
+}
+#content{
+    display: flex;
+    flex: 5;
+    padding: 1rem;
+}
+table{
+    border-spacing: 0.5rem;
+    margin-top: 20px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+    main{
+        flex-flow: column nowrap;
+    }
+    main aside{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about{
+        flex-direction: column-reverse;
+    }
+    .left-about{
+        padding: 2rem;
+        margin-top: 20px;
+    }
+    .left-about h1{
+        font-size: 40px;
+    }
+    .skill-list li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about img{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav ul li a{
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    background-color: #111111;
+    font-family: 'Reddit Sans';
+}
+.footer-up{
+    padding: 5px;
+}
+.footer-buttom{
+    background-color: #000000;
+    padding: 5px;
+}
